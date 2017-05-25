@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora de Octavio 😁</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body onLoad="inicio()">
+	<div class="contenedor">
+		<div class="c_digitos">
+			<span>Calculadora de <strong>Octavio</strong> 😁</span>
+			<input type="text" id="num" size="11" maxlength="10" autofocus="1" onkeypress="return valida(event)">
+		</div>
+
+		<div class="c_botones">
+
+			<div class="c_b_fila">
+				<a href="#" onclick="limpiar()">
+					<div class="c_b_f_boton1">
+						<span>AC</span>
+					</div>
+				</a>
+				<a href="#" onclick="base10()">
+					<div class="c_b_f_botonUnarias">
+						<span>10x</span>
+					</div>
+				</a>
+				<a href="#" onclick="exponenciar()">
+					<div class="c_b_f_botonBinarias">
+						<span>^</span>
+					</div>
+				</a>
+				<a href="#" onclick="dividir()">
+					<div class="c_b_f_botonBinarias">
+						<span>÷</span>
+					</div>
+				</a>
+				<a href="#" onclick="raiz()">
+					<div class="c_b_f_botonUnarias">
+						<span>√</span>
+					</div>
+				</a>
+			</div>
+			<div class="c_b_fila">
+				<a href="#" onclick="agregarDigito('7')">
+					<div class="c_b_f_boton2">
+						<span>7</span>
+					</div>
+				</a>
+				<a href="#" onclick="agregarDigito('8')">
+					<div class="c_b_f_boton2">
+						<span>8</span>
+					</div>
+				</a>
+				<a href="#" onclick="agregarDigito('9')">
+					<div class="c_b_f_boton2">
+						<span>9</span>
+					</div>
+				</a>
+				<a href="#" onclick="multiplicar()">
+					<div class="c_b_f_botonBinarias">
+						<span>x</span>
+					</div>
+				</a>
+				<a href="#" onclick="sumatoria()">
+					<div class="c_b_f_botonUnarias">
+						<span>∑</span>
+					</div>
+				</a>
+			</div>
+			<div class="c_b_fila">
+				<a href="#" onclick="agregarDigito('4')">
+					<div class="c_b_f_boton2">
+						<span>4</span>
+					</div>
+				</a>
+				<a href="#" onclick="agregarDigito('5')">
+					<div class="c_b_f_boton2">
+						<span>5</span>
+					</div>
+				</a>
+				<a href="#" onclick="agregarDigito('6')">
+					<div class="c_b_f_boton2">
+						<span>6</span>
+					</div>
+				</a>
+				<a href="#" onclick="restar()">
+					<div class="c_b_f_botonBinarias">
+						<span>—</span>
+					</div>
+				</a>
+				<a href="#" onclick="tangente()">
+					<div class="c_b_f_botonUnarias">
+						<span>tan</span>
+					</div>
+				</a>
+			</div>
+			<div class="c_b_fila">
+				<a href="#" onclick="agregarDigito('1')">
+					<div class="c_b_f_boton2">
+						<span>1</span>
+					</div>
+				</a>
+				<a href="#" onclick="agregarDigito('2')">
+					<div class="c_b_f_boton2">
+						<span>2</span>
+					</div>
+				</a>
+				<a href="#" onclick="agregarDigito('3')">
+					<div class="c_b_f_boton2">
+						<span>3</span>
+					</div>
+				</a>
+				<a href="#" onclick="sumar()">
+					<div class="c_b_f_botonBinarias">
+						<span>+</span>
+					</div>
+				</a>
+				<a href="#" onclick="coseno()">
+					<div class="c_b_f_botonUnarias">
+						<span>cos</span>
+					</div>
+				</a>
+			</div>
+			<div class="c_b_fila">
+				<a href="#" onclick="agregarDigito('0')">
+					<div class="c_b_f_boton2 c_b_f_botonCero">
+						<span>0</span>
+					</div>
+				</a>
+				<a href="#" onclick="agregarDigito('.')">
+					<div class="c_b_f_boton2">
+						<span>.</span>
+					</div>
+				</a>
+				<a href="#" onclick="calcular()">
+					<div class="c_b_f_botonBinarias">
+						<span>=</span>
+					</div>
+				</a>
+				<a href="#" onclick="seno()">
+					<div class="c_b_f_botonUnarias">
+						<span>sin</span>
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript" src="operaciones.js"></script>
+
+</body>
+</html>
