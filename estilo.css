@@ -1,0 +1,150 @@
+body{
+	background: url("fondo.jpg");
+	background-size: cover;
+	text-decoration: none;
+}
+
+a:link, a:visited, a:active{
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+.contenedor{
+	/*background: #be00e0;*/
+	width: 447px;
+	height: 480px;
+	margin: 5% auto;
+	-webkit-box-shadow: 0 35px 60px 0 rgba(0,0,0,0.8∫);
+	box-shadow: 0 35px 60px 0 rgba(0,0,0,0.8);
+}
+
+.c_digitos{
+	background: rgba(41,41,41,1);
+	background: -webkit-linear-gradient(left, rgba(41,41,41,1) 0%, rgba(81,60,72,1) 100%);
+	background: -o-linear-gradient(left, rgba(41,41,41,1) 0%, rgba(81,60,72,1) 100%);
+	background: linear-gradient(to right, rgba(41,41,41,1) 0%, rgba(81,60,72,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#513c48', GradientType=1 );
+	height: 120px;
+	display: block;
+	border: 2px solid #b4b4b4;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+
+.c_digitos span{
+	color: #fff;
+	font-weight: 300;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 12px;
+	margin: 0 0 0 10px;
+	display: block;
+}
+
+.c_digitos input{
+	color: #fff;
+	text-align: right;
+	display: block;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	line-height: 80px;
+	vertical-align: middle;
+	font-size: 68px;
+	max-width: 427px;
+	overflow-x: visible;
+	margin: 10px;
+	background:none; 
+	border:none; 
+	outline:0
+}
+
+.c_botones{
+	/*background: #54a92f;*/
+	width: 447px;
+	height: 360px;
+	display: block;
+}
+
+.c_b_fila{
+	/*background: #a92f2f;*/
+	width: 447px;
+	height: 72px;
+	display: block;
+	margin-right: -4px;
+}
+
+.c_b_fila div{
+	/*background: #e0e0e0;*/
+	width: 85px;
+	height: 72px;
+	border: 1.5px solid #888888;
+	outline: 2px solid #b4b4b4;
+	margin: 0 -4px 0 2px;
+	cursor: pointer;
+}
+
+.c_b_fila div::before{
+	content: " ";
+	background: rgba(0, 0, 0, 0.1);
+	width: 85px;
+	height: 72px;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	cursor: pointer !important;
+}
+
+.c_b_f_botonCero::before{
+	width: 174px !important;
+}
+
+.c_b_fila div:hover::before{
+	opacity: 1;
+}
+
+.c_b_f_botonCero{
+	width: 174px !important;
+}
+
+.c_b_f_boton1, .c_b_f_boton2, .c_b_f_botonBinarias, .c_b_f_botonUnarias{
+	width: 72px;
+	height: 88px;
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.c_b_f_boton1{
+	background: #d6d6d6;
+}
+
+.c_b_f_boton2{
+	background: #e0e0e0;
+}
+
+.c_b_f_botonBinarias{
+	background: #f5923e;
+}
+
+.c_b_f_botonUnarias{
+	background: #f5923e;
+}
+
+.c_b_f_boton1, .c_b_c_boton2{
+	color: #000;
+	font-weight: bolder;
+}
+
+.c_b_f_botonBinarias, .c_b_f_botonUnarias{
+	color: #fff;
+}
+
+.c_b_fila div span{
+	line-height: 72px;
+	vertical-align: middle;
+	text-align: center;
+	display: block;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	font-size: 24px;
+}
